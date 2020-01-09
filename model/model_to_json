@@ -1,0 +1,8 @@
+
+1. 가중치 파일 h5->json 변환
+tensorflowjs_converter --input_format keras \
+                       /tmp/gersang3.h5 \
+                       /tmp/t_model
+
+
+

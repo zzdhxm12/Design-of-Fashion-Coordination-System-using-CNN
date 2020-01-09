@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="webthemez">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixteen</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style4.css" />
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="banner" role="banner" id="home">
+  <header id="header" class="fix-hed">
+    <div class="header-content clearfix"> <a class="logo" href="index.html">Sixteen <span>Fashion Recommendation</span></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		 <li><a href="recommend.html">Back</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!-- banner text -->
+</section>
+<!-- section -->
+<section id="detailsPage">
+  <div class="container">
+    <div class="row">
+    	<div class="section-header">
+        <h2 class="wow fadeInDown animated">Show more</h2>
+        <a href="details.html" class="morebtn">All</a>
+        <a href="red_top.html" class="morebtn">Red Top</a>
+        <a href="yellow_top.html" class="morebtn">Black Top</a>
+        <a href="white_top.html" class="morebtn">White Top</a>
+        <a href="black_bottom.html" class="morebtn">Black Bottom</a>
+        <a href="red_bottom.html" class="morebtn">White Bottom</a>
+        <a href="jean_bottom.html" class="morebtn">Jean Bottom</a>
+      </div>
+      <div id="content24" data-section="content-24" class="data-section">
+        <?php
+        $mysqli = mysqli_connect("localhost","root","1234","fashion");
+        $query="SELECT img FROM recommend WHERE output='jean_bottom'";
+        $result=$mysqli->query($query);
+          if($result->num_rows>0)
+            {
+              while($row=$result->fetch_assoc())
+                { ?>
+        <div class="align-center">
+          <div class="col-md-4">
+            <a href="<?php echo $row['img']; ?>" class="work-box">
+            <img src="<?php echo $row['img']; ?>" alt="bride" class="img-middle" width='300' height='300'/>
+            <div class="overlay">
+              <div class="overlay-caption">
+              </div>
+            </div>
+            <!-- overlay -->
+            </a>
+          </div>
+        </div>
+                <?php
+                }
+            }
+        ?>
+    	</div>
+    </div>
+	</div>
+</section>
+<!-- section -->
+
+<!-- JS FILES -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.contact.js"></script>
+</body>
+</html>
