@@ -8,17 +8,61 @@
 
 CNN은 신경망에 기존의 필터 기술을 병합해 신경망이 2차원 영상을 잘 습득할 수 있도록 최적화한 알고리즘이다. CNN은 크게 convolution-pooling layer와 fully connected layer의 두 부분으로 구성되어 있다. 두 부분은 각각 입력된 이미지로부터 계층적 구조의 특징을 추출하는 역할과 추출된 특징을 입력받아 특정 카테고리로 분류하는 역할을 담당한다.
 
+## 개발 환경
+
+* CNN 모델 
+
+- ubuntu16.04
+
+- cuda8.0
+
+- cundnn5.1
+
+- tensorflow1.6.0
+
+
+* 웹 서버
+
+- html
+
+- MySQL
+
+- PHP
+
+
 ## Architecture
 
 ![image](https://user-images.githubusercontent.com/53864655/72071935-3e9aca80-3330-11ea-9d66-095121c5a036.png)
 
-사용자가 웹에서 의상 이미지를 입력하면 입력된 이미지가 서버로 전달된다. 이때, 서버는 CNN 모델을 실행하여 입력된 이미지의 특징을 추출한 후 이미지의 특징 태그를 서버로 전달한다. 그 후, 서버는 전달받은 태그를 사용하여 데이터베이스를 검색하여 가장 잘 어울리는 의상을 찾아 웹으로 전송하여 출력한다. 태그에 따라 가장 잘 어울리는 의상을 선택한 방식은 [6]의 색채 코디네이션의 종류 중 대조 색상 코디네이션, 유채색과 무채색의 코디네이션에 기반 하였다.
+1. 사용자가 웹에서 의상 이미지 입력하여 서버로 전달한다.
+2. 서버는 CNN 모델을 실행하여 입력된 이미지의 특징 추출하여 특징 태그를 획득한다.
+3. CNN 모델은 획득한 특징 태그를 서버로 전달한다.
+4. 서버는 전달받은 특징 태그를 데이터베이스로 전달한다.
+5. 데이터베이스는 특징 태그와 가장 잘 어울리는 의상을 검색하여 추천 의상 이미지 서버로 전달한다.
+6. 서버는 전달 받은 추천 의상 이미지를 웹으로 전송하여 출력한다.
 
-* Database
+
+### Database
 
 ![image](https://user-images.githubusercontent.com/53864655/72071438-22e2f480-332f-11ea-8f46-410cf2df6318.png)
 
+* 관계형 데이터베이스 스키마 설계
+``` 
+Create table recommend (
+ id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ input varchar(300),
+ output varchar(300),
+ img varchar(300)
+); 
+```
+
 ![image](https://user-images.githubusercontent.com/53864655/72071461-342c0100-332f-11ea-9e28-cf9909602e18.png)
+
+* id : Data의 고유 번호
+* input : 사용자가 입력한 패션 아이템
+* output : input과 어울리는 패션 아이템
+* img : output의 이미지 경로
+
 
 ## Dataset
 
@@ -41,6 +85,10 @@ CNN은 신경망에 기존의 필터 기술을 병합해 신경망이 2차원 �
 ### 2. 버튼
 
 ![image](https://user-images.githubusercontent.com/53864655/72071210-9c2e1780-332e-11ea-8bd7-1cb0f4253963.png)
+
+HOME 버튼 클릭 시, 메인 페이지로 페이지 재로딩한다.
+RECOMMENDATION 버튼 클릭 시, 패션 추천 서비스 페이지로 이동한다.
+DETAIL 버튼 클릭 시, 추천 의상 상세 페이지로 이동한다.
 
 ### 3. 패션 추천 서비스 페이지
 
