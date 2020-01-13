@@ -24,18 +24,24 @@ Deep Learning 기술 중 하나인 CNN(Convolutional Neural Networks)을 사용�
 
 ![image](https://user-images.githubusercontent.com/53864655/72071935-3e9aca80-3330-11ea-9d66-095121c5a036.png)
 
-1. 사용자가 웹에서 의상 이미지 입력하여 서버로 전달한다.
-2. 서버는 CNN 모델을 실행하여 입력된 이미지의 특징 추출하여 특징 태그를 획득한다.
-3. CNN 모델은 획득한 특징 태그를 서버로 전달한다.
-4. 서버는 전달받은 특징 태그를 데이터베이스로 전달한다.
-5. 데이터베이스는 특징 태그와 가장 잘 어울리는 의상을 검색하여 추천 의상 이미지 서버로 전달한다.
-6. 서버는 전달 받은 추천 의상 이미지를 웹으로 전송하여 출력한다.
+**(1)** 사용자가 웹에서 의상 이미지 입력하여 서버로 전달한다.
+
+**(2)** 서버는 CNN 모델을 실행하여 입력된 이미지의 특징 추출하여 특징 태그를 획득한다.
+
+**(3)** CNN 모델은 획득한 특징 태그를 서버로 전달한다.
+
+**(4)** 서버는 전달받은 특징 태그를 데이터베이스로 전달한다.
+
+**(5)** 데이터베이스는 특징 태그와 가장 잘 어울리는 의상을 검색하여 추천 의상 이미지 서버로 전달한다.
+
+**(6)** 서버는 전달 받은 추천 의상 이미지를 웹으로 전송하여 출력한다.
+
 
 ### 2. Database 설계
 
 ![image](https://user-images.githubusercontent.com/53864655/72071438-22e2f480-332f-11ea-8f46-410cf2df6318.png)
 
-* 관계형 데이터베이스 스키마 설계
+* **관계형 데이터베이스 스키마 설계**
 ``` 
 Create table recommend (
  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -52,13 +58,14 @@ Create table recommend (
 * output : input과 어울리는 패션 아이템
 * img : output의 이미지 경로
 
+
 ## CNN(Convolutional Neural Networks)
 
-* CNN 모델 구조
+* **CNN 모델 구조**
 
 ![image](https://user-images.githubusercontent.com/53864655/72241451-40afa280-362a-11ea-939c-5a27b7eb0bb5.png)
 
-* 객체 인식 과정
+* **객체 인식 과정**
 
 ![image](https://user-images.githubusercontent.com/53864655/72241455-4311fc80-362a-11ea-8177-9d057714f9c7.png)
 
