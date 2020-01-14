@@ -88,11 +88,11 @@ CNN은 신경망에 기존의 필터 기술을 병합해 신경망이 2차원 �
 
 ### 1. 시작페이지
 
-![image](https://user-images.githubusercontent.com/53864655/72071144-7a349500-332e-11ea-9e55-22257b54a156.png)
+![image](https://user-images.githubusercontent.com/53864655/72302062-2d451b80-36ac-11ea-83a9-e99eba389b65.png)
 
 ### 2. 버튼
 
-![image](https://user-images.githubusercontent.com/53864655/72071210-9c2e1780-332e-11ea-8bd7-1cb0f4253963.png)
+![image](https://user-images.githubusercontent.com/53864655/72302071-33d39300-36ac-11ea-8c06-e966ece74ab2.png)
 
 HOME 버튼 클릭 시, 메인 페이지로 페이지 재로딩한다.
 RECOMMENDATION 버튼 클릭 시, 패션 추천 서비스 페이지로 이동한다.
@@ -102,27 +102,28 @@ DETAIL 버튼 클릭 시, 추천 의상 상세 페이지로 이동한다.
 
 * 전체 UI
 
-![image](https://user-images.githubusercontent.com/53864655/72071226-a6e8ac80-332e-11ea-93ff-323777564456.png)
+![image](https://user-images.githubusercontent.com/53864655/72302073-359d5680-36ac-11ea-8fdd-cb3636e15976.png)
 
 * 패션 아이템 이미지 입력
 
-![image](https://user-images.githubusercontent.com/53864655/72071273-bbc54000-332e-11ea-88fc-44d67339d12b.png)
+![image](https://user-images.githubusercontent.com/53864655/72302083-4057eb80-36ac-11ea-905a-d7fc2b105921.png)
 
 * 이미지 판별
 
-![image](https://user-images.githubusercontent.com/53864655/72071314-d992a500-332e-11ea-9c93-27ecdaff4b64.png)
+![image](https://user-images.githubusercontent.com/53864655/72302087-44840900-36ac-11ea-9e54-808c915c5a2f.png)
 
 * 패션 아이템 추천
 
-![image](https://user-images.githubusercontent.com/53864655/72071341-ea431b00-332e-11ea-825c-64cb7617568a.png)
+![image](https://user-images.githubusercontent.com/53864655/72302090-464dcc80-36ac-11ea-9622-fe3dac0b77d2.png)
 
 ### 4. 추천 의상 이미지 상세 페이지
 
 * 전체 UI
 
-![image](https://user-images.githubusercontent.com/53864655/72071373-fa5afa80-332e-11ea-9146-c1776d1e88e2.png)
+![image](https://user-images.githubusercontent.com/53864655/72302095-48b02680-36ac-11ea-94b0-69defb8eec22.png)
 
 * 자세히 보기
 
-![image](https://user-images.githubusercontent.com/53864655/72071399-0ba40700-332f-11ea-859e-396fa99fe382.png)
+![image](https://user-images.githubusercontent.com/53864655/72302097-4b128080-36ac-11ea-8113-6214531e8dbc.png)
+
 
