@@ -17,6 +17,48 @@ Deep Learning 기술 중 하나인 CNN(Convolutional Neural Networks)을 사용�
 - MySQL
 - PHP
 
+## Usecase
+
+### 1. 시작페이지
+
+![image](https://user-images.githubusercontent.com/53864655/72302062-2d451b80-36ac-11ea-83a9-e99eba389b65.png)
+
+### 2. 버튼
+
+![image](https://user-images.githubusercontent.com/53864655/72302071-33d39300-36ac-11ea-8c06-e966ece74ab2.png)
+
+* HOME : 메인 페이지로 페이지 재로딩한다.
+* RECOMMENDATION : 패션 추천 서비스 페이지로 이동한다.
+* DETAIL : 추천 의상 상세 페이지로 이동한다.
+
+### 3. 패션 추천 서비스 페이지
+
+* 전체 UI
+
+![image](https://user-images.githubusercontent.com/53864655/72302073-359d5680-36ac-11ea-8fdd-cb3636e15976.png)
+
+* 패션 아이템 이미지 입력
+
+![image](https://user-images.githubusercontent.com/53864655/72302083-4057eb80-36ac-11ea-905a-d7fc2b105921.png)
+
+* 이미지 판별
+
+![image](https://user-images.githubusercontent.com/53864655/72302087-44840900-36ac-11ea-9e54-808c915c5a2f.png)
+
+* 패션 아이템 추천
+
+![image](https://user-images.githubusercontent.com/53864655/72302090-464dcc80-36ac-11ea-9622-fe3dac0b77d2.png)
+
+### 4. 추천 의상 이미지 상세 페이지
+
+* 전체 UI
+
+![image](https://user-images.githubusercontent.com/53864655/72302095-48b02680-36ac-11ea-94b0-69defb8eec22.png)
+
+* 자세히 보기
+
+![image](https://user-images.githubusercontent.com/53864655/72302097-4b128080-36ac-11ea-8113-6214531e8dbc.png)
+
 
 ## Architecture
 
@@ -85,47 +127,4 @@ CNN은 신경망에 기존의 필터 기술을 병합해 신경망이 2차원 �
 ![image](https://user-images.githubusercontent.com/53864655/72070871-e1057e80-332d-11ea-9abe-f1e83cbe6b4b.png)
 
 학습은 총 5,000번 반복하여 실행하였으며 최종적으로 카테고리 별로 의류를 분류하는 정확도가 95%의 모델을 생성하였다.
-
-## Usecase
-
-### 1. 시작페이지
-
-![image](https://user-images.githubusercontent.com/53864655/72302062-2d451b80-36ac-11ea-83a9-e99eba389b65.png)
-
-### 2. 버튼
-
-![image](https://user-images.githubusercontent.com/53864655/72302071-33d39300-36ac-11ea-8c06-e966ece74ab2.png)
-
-* HOME : 메인 페이지로 페이지 재로딩한다.
-* RECOMMENDATION : 패션 추천 서비스 페이지로 이동한다.
-* DETAIL : 추천 의상 상세 페이지로 이동한다.
-
-### 3. 패션 추천 서비스 페이지
-
-* 전체 UI
-
-![image](https://user-images.githubusercontent.com/53864655/72302073-359d5680-36ac-11ea-8fdd-cb3636e15976.png)
-
-* 패션 아이템 이미지 입력
-
-![image](https://user-images.githubusercontent.com/53864655/72302083-4057eb80-36ac-11ea-905a-d7fc2b105921.png)
-
-* 이미지 판별
-
-![image](https://user-images.githubusercontent.com/53864655/72302087-44840900-36ac-11ea-9e54-808c915c5a2f.png)
-
-* 패션 아이템 추천
-
-![image](https://user-images.githubusercontent.com/53864655/72302090-464dcc80-36ac-11ea-9622-fe3dac0b77d2.png)
-
-### 4. 추천 의상 이미지 상세 페이지
-
-* 전체 UI
-
-![image](https://user-images.githubusercontent.com/53864655/72302095-48b02680-36ac-11ea-94b0-69defb8eec22.png)
-
-* 자세히 보기
-
-![image](https://user-images.githubusercontent.com/53864655/72302097-4b128080-36ac-11ea-8113-6214531e8dbc.png)
-
 
